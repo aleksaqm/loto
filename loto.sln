@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loto", "loto\loto.csproj", "{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player", "Player\Player.csproj", "{2AB2E09D-3E07-43EE-9210-73B6158C7168}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F} = {ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotoMachine", "LotoMachine\LotoMachine.csproj", "{AF9D5438-B582-4C7B-9EC7-CAA2B0E83B38}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F} = {ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD28AE1-FC95-46B6-BA9A-E3EAA4DA614F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB2E09D-3E07-43EE-9210-73B6158C7168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB2E09D-3E07-43EE-9210-73B6158C7168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB2E09D-3E07-43EE-9210-73B6158C7168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB2E09D-3E07-43EE-9210-73B6158C7168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9D5438-B582-4C7B-9EC7-CAA2B0E83B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9D5438-B582-4C7B-9EC7-CAA2B0E83B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9D5438-B582-4C7B-9EC7-CAA2B0E83B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9D5438-B582-4C7B-9EC7-CAA2B0E83B38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32FF10E3-BEC6-480D-9997-F0CF3309CDF0}
+	EndGlobalSection
+EndGlobal

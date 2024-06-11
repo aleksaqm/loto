@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CalculateLoto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="firstNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="secondNumber" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitPlayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="playerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="secondNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="amount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LotoResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="playerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="secondNumber" type="xs:int" />
+        <xs:element minOccurs="0" name="matches" type="xs:int" />
+        <xs:element minOccurs="0" name="earnings" type="xs:int" />
+        <xs:element minOccurs="0" name="leaderboard" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageArrived">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="message" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
